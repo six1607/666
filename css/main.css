@@ -28,3 +28,6 @@ td {
   list-style: none;
   text-decoration: none;
 }
+div{
+	width: 0 ;
+}
