@@ -5,3 +5,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
   text-decoration: none;
 }
 /*付羽-笔试题库管理*/
+.fy-banner{
+  width: 100%;height: 646px;background-image: url(../images/fy-banner.png);
+}
