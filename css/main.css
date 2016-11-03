@@ -27,87 +27,74 @@ td {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
-<<<<<<< HEAD
-a{
-  text-decoration: none;
-}
-*{
-  font-family: "微软雅黑", "宋体", sans-serif;
-  font-size:14px;
-}
-.srx_exam{
-  width: 740px;
-  height: 793px;
-  box-shadow: 0 0 5px #f3f3f3;
-  margin: 0 auto;
-  padding: 36px 50px;
-}
-.srx_exam_top{
-  width: 740px;
-  height: 33px;
-  background: url("../images/srx_bs0-5.png")no-repeat;
-}
-.srx_exam_tm{
-  width: 740px;
-  height: 23px;
-  margin-top: 36px;
-  background: url("../images/srx_bs0-5.png")no-repeat;
-  background-position: 0 -33px;
-}
-.srx_exam_t{
-  height: auto;
-  width: 740px;
-}
-.srx_exam_style{
-  width: 100%;
-  height: auto;
-}
-.srx_title{
-  width: 100%;
-  height: 44px;
-  line-height: 44px;
-  margin-top: 10px;
-  border-bottom: 1px solid #E1E1E1;
-}
-.srx_title>h6{
-  font-size: 18px;
-  color: #3f3e3e;
-}
-.srx_content1,.srx_content2{
-  width: 100%;
-  height: 60px;
-  margin-top: 20px;
-  color: #888787;
-}
-.srx_content1>dd {
-  margin: 20px;
-  float: left;
-}
-.srx_content2>dd{
-  float: left;
-  margin: 20px 20px 0 20px;
-}
-.srx_exam_bottom{
-  width: 100%;
-  height: 127px;
-  position: relative;
-}
-.srx_exam_btn{
-  width: 175px;
-  height: 60px;
-  position: absolute;
-  right: 0;bottom: 0;
-  background:url("../images/srx_bs0-5.png")no-repeat;
-  background-position: 0 -56px;
-  display: block;
-  color: #fff;
-  font-size: 17px;
-  text-align: center;
-  line-height: 60px;
-=======
 /*付羽-笔试题库管理*/
 .fy-banner{
-  width: 100%;height: 646px;background-image: url(../images/fy-banner.png);
->>>>>>> origin/master
+  width: 100%;height: 646px;background-image: url(../images/fy-bannerbg.png);background-size:cover;position: relative;
+}
+.fy-banner .fy-banner-mask{
+  width: 100%;height: 501px;position: absolute;bottom: 0;background-image: url(../images/fy-banner-mask.png);
+}
+ .fy-banner .fy-banner-mask .fy-banner-logo{
+   width: 876px;height: 187px;background-image: url(../images/fy-logo.png);position: absolute;top:72px;left: 261px;
+ }
+ .fy-main{
+   width: 100%;height:auto;
+ }
+ .fy-main .fy-body{
+   width: 1200px;height: 100%;margin: 0 auto;position: relative;
+ }
+ .fy-main .fy-body .fy-left{
+    width: 360px;height: 627px;position: absolute;top: -177px;left: 0;
+ }
+.fy-main .fy-body .fy-right{
+  width:840px;height: 865px;background-color:#fff;position: absolute;top: -177px;right: 0;
+}
+.fy-main .fy-body .fy-left .fy-left-first{
+  width: 359px;height: 452px;position: relative;background-image: url(../images/fy-demobg.png);background-size: 100% 100%;
+}
+.fy-main .fy-body .fy-left .fy-left-first .fy-bian{
+  width: 333px;height: 13px;background-color: #E8BC0F;margin: 0 auto;position: relative;
+}
+.fy-main .fy-body .fy-left .fy-left-first .fy-moban{
+  width: 360px;height: 101px;background-image: url(../images/fy-demo.png);position: absolute;top: 40px;left:-1px;
+}
+.fy-main .fy-body .fy-left .fy-left-first .fy-moban .fy-new{
+  width: 160px;height: 45px;background-image: url(../images/fy-new.png);position: absolute;top: 50%;margin-top: -30px;right: 19px;
+}
+.fy-main .fy-body .fy-left .fy-left-first ul{
+  width: 333px;height: 323px;margin: 0 auto;position: absolute;bottom: 0;left: 50%;margin-left: -166px;padding: 20px 42px 53px 26px;
+}
+.fy-main .fy-body .fy-left .fy-left-first ul li{
+  width: 100%;height: 25%;
+}
+.fy-main .fy-body .fy-left .fy-left-first ul li .fy-itemleft{
+  width: 50%;height: 100%;font-size: 27px;text-align: left;line-height: 59px;font-family: "苹方 常规";color: #4D4D4D;float: left;
+}
+.fy-main .fy-body .fy-left .fy-left-first ul li .fy-itemright{
+  width: 50%;height: 100%;font-size: 27px;text-align: right;line-height: 59px;font-family: "苹方 常规";color: #4D4D4D;
+  float: right;
+}
+.fy-main .fy-body .fy-left .fy-left-second{
+  width: 359px;height: 452px;position: relative;background-image: url(../images/fy-demobg.png);background-size: 100% 100%;
+}
+.fy-main .fy-body .fy-left .fy-left-second .fy-bian{
+  width: 333px;height: 13px;background-color: #E8BC0F;margin: 0 auto;position: relative;
+}
+.fy-main .fy-body .fy-left .fy-left-second .fy-moban{
+  width: 360px;height: 100px;background-image: url(../images/fy-rec.png);position: absolute;top: 40px;left:0;
+}
+.fy-main .fy-body .fy-left .fy-left-second ul{
+  width: 333px;height: 323px;margin: 0 auto;position: absolute;bottom: 0;left: 50%;margin-left: -166px;padding: 20px 42px 53px 26px;
+}
+.fy-main .fy-body .fy-left .fy-left-second ul li{
+  width: 100%;height: 25%;
+}
+.fy-main .fy-body .fy-left .fy-left-second ul li .fy-itemleft{
+  width: 50%;height: 100%;font-size: 27px;text-align: left;line-height: 59px;font-family: "苹方 常规";color: #4D4D4D;float: left;
+}
+.fy-main .fy-body .fy-left .fy-left-second ul li .fy-itemright{
+  width: 50%;height: 100%;font-size: 27px;text-align: right;line-height: 59px;font-family: "苹方 常规";color: #4D4D4D;
+  float: right;
 }
