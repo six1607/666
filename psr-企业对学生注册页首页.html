@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册首页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<style>
+    body{
+        position: relative;
+        z-index: -6;
+    }
+    .psr-mask{
+        width:100%;
+        height: 100%;
+        background: #000;
+        position: fixed;
+        z-index: -4;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+    }
+    .psr-box{
+        width: 952px;
+        height: 825px;
+        position: relative;
+        z-index: -2;
+        left: 0;right:0;
+        bottom:0;top:0;
+        margin:auto;
+    }
+    .psr-box1{
+        width:100%;
+        height:710px;
+        position: absolute;
+        bottom: 0;
+        background: #efefef;
+        z-index: -1;
+        padding: 160px 140px 0 140px;
+        box-sizing: border-box;
+    }
+    .psr-title{
+        width:580px;
+        height:200px;
+        position: relative;
+        margin:0 auto;
+    }
+    .psr-email-text,.psr-identifying-code{
+        float: right;
+        width: 500px;
+        height: 50px;
+        border:0;
+        box-shadow: 0 0 10px rgba(204, 204, 204, 0.51);
+    }
+    .psr-open{
+        width: 1px;
+        height: 31px;
+    }
+    .psr-small-input{
+        width: 240px;
+    }
+    .psr-identifying-code{
+        width: 240px;
+        display: inline-block;
+        margin-left:20px;
+        height: 52px;
+        background: #fff;
+        text-align: center;
+        line-height: 52px;
+        color:#2e2e2e;
+    }
+    .psr-register{
+        float: right;
+        margin-right: 5px;
+        margin-top:55px;
+    }
+</style>
+<body>
+    <div class="psr-mask">
+    </div>
+    <div class="psr-box">
+        <div class="psr-title">
+            <img src="images/psr-t6.png" alt="" draggable="false">
+        </div>
+        <div class="psr-box1">
+            <img src="images/psr-t7.png" alt="" class="psr-email" style="margin-top: 2px;">
+            <input type="text" class="psr-email-text" name="email">
+            <div class="psr-open"></div>
+            <img src="images/psr-t8.png" alt="" class="psr-email">
+            <input type="text" class="psr-email-text" name="password">
+            <div class="psr-open"></div>
+            <img src="images/psr-t9.png" alt="" class="psr-email">
+            <input type="text" class="psr-email-text" name="confirm-password">
+            <div class="psr-open"></div>
+            <img src="images/psr-t9.png" alt="" class="psr-email">
+            <input type="text" class="psr-email-text" name="confirm-password">
+            <div class="psr-open"></div>
+            <img src="images/psr-t8.png" alt="" class="psr-email">
+            <span class="psr-identifying-code">3215</span>
+            <input type="text" class="psr-email-text psr-small-input" name="identifying-code">
+            <div class="psr-register"><img src="images/psr-t11.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
