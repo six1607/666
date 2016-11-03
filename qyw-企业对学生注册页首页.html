@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业对学生注册页首页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="qyw-mask">
+    <div class="qyw-container">
+        <div class="qyw-designercon">
+            <div class="qyw-nicheng">
+                <div class="lable">企业名称</div>
+                <input type="text" placeholder="中文（不少于30字）">
+            </div>
+            <div class="qyw-chengshi">
+                <div class="lable">所在城市</div>
+                <form action="" name="form1">
+                    <div class="item" id="Province">
+                        <i>省...</i>
+                        <ul>
+                            <li>请选择省份</li>
+                        </ul>
+                        <input type="hidden" name="cho_Province" value="请选择省份" />
+                    </div>
+                    <div class="item" id="City">
+                        <i>市...</i>
+                        <ul>
+                            <li>请选择城市</li>
+                        </ul>
+                        <input type="hidden" name="cho_City" value="请选择城市" />
+                    </div>
+                </form>
+            </div>
+            <div class="qyw-clear"></div>
+            <div class="qyw-nicheng qyw-zsxm">
+                <div class="lable">真实姓名</div>
+                <input type="text" placeholder="中文（不少于8字）">
+            </div>
+            <div class="qyw-shenfen">
+                <div class="lable">职位</div>
+                <select name="zw" id="qyw-zw">
+                    <option value ="1">&nbsp;&nbsp;设计师</option>
+                    <option value ="2">&nbsp;&nbsp;主管</option>
+                    <option value="3">&nbsp;&nbsp;总监</option>
+                    <option value="4">&nbsp;&nbsp;其他</option>
+                </select>
+            </div>
+            <div class="qyw-shenfen">
+                <div class="lable">性别</div>
+                <select name="xb" id="qyw-xb">
+                    <option value ="1">&nbsp;&nbsp;男</option>
+                    <option value ="2">&nbsp;&nbsp;女</option>
+                </select>
+            </div>
+        </div>
+        <div class="qyw-designertitle qyw-qiyeshenfen">
+        </div>
+        <div class="qyw-xiabu"></div>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/city.min.js"></script>
+<script src="js/jquery.cityselect.js"></script>
+<script>
+    $(function () { //调用插件
+        $.fn.citySelect();
+    });
+    $(function () {
+        form1 = $('form[name=form1]'),
+                prev = $('input[name=cho_Province]', form1),
+                city = $('input[name=cho_City]', form1),
+                value = ['请选择省份', '请选择城市'];
+        form1.submit(function () {
+            if (prev.val() == value[0]) {
+                alert(value[0]);
+                return false;
+            };
+            if (city.val() == value[1]) {
+                alert(value[1]);
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>
