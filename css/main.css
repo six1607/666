@@ -28,6 +28,12 @@ td {
   list-style: none;
   text-decoration: none;
 }
+<<<<<<< HEAD
 .a1{
   width: 100px;
 }
+=======
+div{
+	width: 0 ;
+}
+>>>>>>> origin/master
