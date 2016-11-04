@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<style>
+    body{
+        position: relative;
+        z-index: -6;
+    }
+    .psr-mask{
+        width:100%;
+        height: 100%;
+        background: #000;
+        position: fixed;
+        z-index: -4;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+    }
+    .psr-box{
+        width: 952px;
+        height: 711px;
+        position: relative;
+        z-index: -2;
+        left: 0;right:0;
+        bottom:0;top:0;
+        margin:auto;
+    }
+    .psr-box1{
+        width:100%;
+        height: 603px;
+        position: absolute;
+        bottom: 0;
+        background: #efefef;
+        z-index: -1;
+        padding: 165px 112px 0 112px;
+        box-sizing: border-box;
+    }
+    .psr-title{
+    width:580px;
+    height:200px;
+    position: relative;
+    margin:0 auto;
+    }
+    .psr-sjs{
+        float: left;
+    }
+    .psr-qy{
+        float: right;
+    }
+    .psr-sjs-btn{
+        width: 142px;
+        height: 50px;
+        float: left;
+        margin:15px 0 0 90px;
+        background: url("images/psr-t5.png") center no-repeat;
+        cursor: pointer;
+    }
+    .psr-qy-btn{
+        width: 142px;
+        height: 50px;
+        float: right;
+        cursor: pointer;
+        margin:15px 90px 0 0;
+        background: url("images/psr-t4.png") center no-repeat;
+    }
+    .psr-text{
+        position:absolute;
+        bottom:-42px;
+        left:155px;
+        margin:0 auto;
+        display: block;
+        font-size: 18px;
+        color: #2e2e2e;
+    }
+    .psr-decs{
+        position: absolute;
+        bottom: -42px;
+        left:100px;
+    }
+</style>
+<body>
+        <div class="psr-mask">
+        </div>
+    <div class="psr-box">
+        <div class="psr-title">
+            <img src="images/psr-t1.png" alt="">
+            <span class="psr-text">身份选择后不能修改，请谨慎选择</span>
+        </div>
+        <div class="psr-box1">
+            <img src="images/psr-t2.png" alt="" class="psr-sjs">
+            <img src="images/psr-t3.png" alt="" class="psr-qy">
+            <div class="psr-sjs-btn"></div>
+            <div class="psr-qy-btn"></div>
+            <img src="images/psr-t12.png" alt="" class="psr-decs">
+        </div>
+    </div>
+</body>
+</html>
